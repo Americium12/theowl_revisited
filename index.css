@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+
+    background: rgb(41,42,45);
+    background: linear-gradient(90deg, rgba(41,42,45,1) 0%, rgba(33,29,64,1) 100%);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+
+    background: rgba(255, 255, 255, 0.4);
+    width: inherit;
+    height: 136px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.first_page{
+    display: flex;
+    flex-direction: column;
+}
+
+.second_page{
+    display: grid;
+}
