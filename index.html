@@ -4,22 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar"></div>
-    <div class="content">
-        <div class="first_page">
-            <div class="articles_row"></div>
-            <div class="articles_row"></div>
+
+    <div class="navbar">
+        <div class="logo_section">
+            <!-- <img src="imgs/theowl_icon.png" alt=""> -->
+            <h1>The Owl</h1>
         </div>
 
+        <!-- <div class="categories_shortcuts_section">
+            <a class="category_shortcut" href=""><h1>Scuola</h1></a>
+            <a class="category_shortcut" href=""><h1>Guerra</h1></a>
+            <a class="category_shortcut" href=""><h1>Sport</h1></a>
+            <a class="category_shortcut" href=""><h1>Roma Capitale</h1></a>
+            <a class="category_shortcut" href=""><h1>Politica</h1></a>
+            <a class="category_shortcut" href=""><h1>Intrattenimento</h1></a>
+        </div> -->
+
+    </div>
+
+    <div class="content">
+        <div class="first_page">
+            <div class="articles_row">
+
+                <div class="article--first_page">
+                    <div class="article--first_page__cover">
+                        <div class="article--first_page__cover__category_title">
+                            <h1></h1>
+                        </div>
+                    </div>
+                    <div class="article--first_page__title_preview"></div>
+                    <div class="article--first_page__title_preview"></div>
+                </div>
+
+                <div class="article--first_page">
+                    <div class="article--first_page__cover">
+                        <div class="article--first_page__cover__category_title">
+                            <h1></h1>
+                        </div>
+                    </div>
+                    <div class="article--first_page__title_preview"></div>
+                    <div class="article--first_page__title_preview"></div>
+                </div>
+
+                <div class="article--first_page">
+                    <div class="article--first_page__cover">
+                        <div class="article--first_page__cover__category_title">
+                            <h1></h1>
+                        </div>
+                    </div>
+                    <div class="article--first_page__title_preview"></div>
+                    <div class="article--first_page__title_preview"></div>
+                </div>
+
+            </div>
+            
+            <div class="articles_row">
+                <div class="article--first_page">
+                    <div class="article--first_page__cover">
+                        <div class="article--first_page__cover__category_title">
+                            <h1></h1>
+                        </div>
+                    </div>
+                    <div class="article--first_page__title_preview"></div>
+                    <div class="article--first_page__title_preview"></div>
+                </div>
+
+                <div class="article--first_page">
+                    <div class="article--first_page__cover">
+                        <div class="article--first_page__cover__category_title">
+                            <h1></h1>
+                        </div>
+                    </div>
+                    <div class="article--first_page__title_preview"></div>
+                    <div class="article--first_page__title_preview"></div>
+                </div>
+
+                <div class="article--first_page">
+                    <div class="article--first_page__cover">
+                        <div class="article--first_page__cover__category_title">
+                            <h1></h1>
+                        </div>
+                    </div>
+                    <div class="article--first_page__title_preview"></div>
+                    <div class="article--first_page__title_preview"></div>
+                </div>
+            </div>
+        </div>
 
         <div class="second_page">
 
         </div>
     </div>
+
     <div class="footer"></div>
 
 </body>
-</html>
+<!-- 1376 x ? -->
+<script>
+    function emptyCategoryTitle_fixWidth(){
+        document.querySelectorAll(".article--first_page__cover__category_title h1").forEach((element)=>{
+            if(element.innerHTML == ""){
+                element.style.width = "calc(93vw/13.76)"
+            }
+        })
+    }
+
+    emptyCategoryTitle_fixWidth()
+    
+</script>
+</html> 
+
